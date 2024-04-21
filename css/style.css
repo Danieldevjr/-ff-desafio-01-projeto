@@ -1,0 +1,129 @@
+/* Estilo geral */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
+    background-color: #f7f7f7; /* Cor de fundo suave */
+    color: #333; /* Cor do texto escura e legível */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #007bff; /* Azul vibrante para o cabeçalho */
+    color: #fff; /* Texto branco para contraste */
+    padding: 30px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px; /* Tamanho de título maior */
+    font-weight: bold; /* Texto em negrito */
+}
+
+p {
+    font-size: 18px; /* Tamanho de parágrafo confortável */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+/* Seções */
+
+main {
+    padding: 40px; /* Aumentar o espaçamento interno */
+}
+
+section {
+    border-bottom: 1px solid #eee; /* Linha divisória sutil */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007bff; /* Cor azul vibrante para títulos de seção */
+    font-size: 28px; /* Tamanho menor que o título principal */
+    margin-top: 0;
+}
+
+/* Listas */
+
+ul {
+    list-style-type: none; /* Remover marcadores padrão */
+    padding: 0;
+}
+
+li {
+    padding: 10px 0; /* Espaçamento entre itens da lista */
+    border-bottom: 1px solid #eee; /* Linha divisória sutil */
+    position: relative; /* Posicionamento relativo para ícones */
+}
+
+li::before {
+    content: ''; /* Conteúdo vazio para o ícone */
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Círculo perfeito */
+    background-color: #007bff; /* Azul vibrante para o ícone */
+    position: absolute; /* Posicionamento absoluto */
+    left: -30px; /* Alinhar à esquerda */
+    top: 50%; /* Centralizar verticalmente */
+    transform: translateY(-50%); /* Ajustar o posicionamento vertical */
+}
+
+/* Estilos para seções específicas (opcional) */
+
+.introducao p {
+    text-align: justify; /* Justificar o texto para melhor leitura */
+}
+
+.trajetoria li {
+    font-weight: bold; /* Tornar os itens da lista mais marcantes */
+}
+
+.paixoes p {
+    color: #009688; /* Verde para destacar as paixões */
+}
+
+.habilidades li {
+    display: flex; /* Alinhar habilidade e descrição na mesma linha */
+    align-items: center; /* Alinhar verticalmente */
+}
+
+.habilidades li span {
+    margin-left: 10px; /* Espaçamento entre habilidade e descrição */
+}
+
+.objetivos p {
+    font-style: italic; /* Texto em itálico para enfatizar os objetivos */
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #d6d4d4; /* Cor de fundo clara */
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #007bff; /* Cor azul vibrante para links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsividade básica */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px; /* Tamanho de título menor para telas menores */
+    }
+
+    section h2 {
+        font-size: 24px; /* Tamanho de títulos de seção menor */
+    }
+}
